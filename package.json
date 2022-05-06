@@ -1,0 +1,33 @@
+{
+  "name": "extremeqt",
+  "version": "1.0.0",
+  "description": "An Extremely fast and lightweight quadtree made in C++ for NodeJS",
+  "main": "src/exports/wrapper.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sopur/ExtremeQuadTree.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sopur/ExtremeQuadTree/issues"
+  },
+  "homepage": "https://github.com/Sopur/ExtremeQuadTree",
+  "keywords": [
+    "quad",
+    "tree",
+    "quadtree",
+    "quad tree",
+    "collision",
+    "collisions",
+    "detector",
+    "collision detector",
+    "collisions detector"
+  ],
+  "author": "Sopur",
+  "license": "MIT",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^5.0.0"
+  },
+  "gypfile": true
+}

@@ -1,0 +1,10 @@
+# Folders
+build/
+node_modules
+
+# Specific files
+package-lock.json
+
+# General files
+*.out
+*.o
