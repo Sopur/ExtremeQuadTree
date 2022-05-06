@@ -29,7 +29,7 @@ All benchmarks can be seen in the `benchmarks/` folder
 # Examples
 
 ```js
-const ExtQT = require("ExtremeQT");
+const ExtQT = require("extremeqt");
 const width = 100;
 const height = 100;
 

@@ -32,10 +32,6 @@ public:
     bool isFull;
     bool hasSplit;
 
-    // The overflow container acts as a extention to the container
-    // The starting index acts like maxHold to act like it's expanding
-    // It's done like this so a over flow container isn't allocated for no reason,
-    // When you could easily use the stack
     uint8_t childIndex;
     ExtTreeChild* children[2][2];
     NodeData container[maxHold];
