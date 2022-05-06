@@ -1,0 +1,7 @@
+# Folders
+build/
+node_modules
+
+# General files
+*.out
+*.o
