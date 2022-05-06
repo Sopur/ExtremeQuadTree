@@ -1,6 +1,6 @@
 {
   "name": "extremeqt",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "An Extremely fast and lightweight quadtree made in C++ for NodeJS",
   "main": "src/exports/wrapper.js",
   "scripts": {

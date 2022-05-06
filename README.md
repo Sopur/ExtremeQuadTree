@@ -74,7 +74,7 @@ qt.deallocate(); // Do this when you will not be using the quadtree anymore. Oth
 
 ### Moves an entity to a different position
 
-`destroy(id, x, y)`
+`move(id, x, y)`
 
 -   id - The identifier of the entity
 -   x - The new position on the X-axis
