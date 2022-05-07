@@ -18,7 +18,8 @@ public:
         cache(new ExtTreeCache),
         child(0, 0, w, h, 0b00, cache) { }
     ~ExtTree() {
-        // Auto deletes cache and child
+        // Auto deletes child
+        delete cache;
     }
 
     // Creates a node
