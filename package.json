@@ -1,7 +1,7 @@
 {
   "name": "extremeqt",
-  "version": "1.0.6",
-  "description": "An Extremely fast and lightweight quadtree made in C++ for NodeJS",
+  "version": "1.0.7",
+  "description": "An Extremely fast and lightweight QuadTree made in C++ for NodeJS",
   "main": "src/exports/wrapper.js",
   "scripts": {
     "install": "node-gyp configure && node-gyp build"
@@ -23,7 +23,11 @@
     "collisions",
     "detector",
     "collision detector",
-    "collisions detector"
+    "collisions detector",
+    "lightweight",
+    "light weight",
+    "light",
+    "fast,"
   ],
   "author": "Sopur",
   "license": "MIT",

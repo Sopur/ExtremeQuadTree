@@ -7,7 +7,7 @@
 #define findSector(nodeX, nodeY) \
     children[(nodeX > midX)][(nodeY > midY)]
 
-void lock2d(ExtTreeVec2d& val, ExtTreeVec2d min, ExtTreeVec2d max) {
+inline void lock2d(ExtTreeVec2d& val, ExtTreeVec2d min, ExtTreeVec2d max) {
     if (val.x > max.x)
         val.x = max.x;
     else if (val.x < min.x)
@@ -19,7 +19,7 @@ void lock2d(ExtTreeVec2d& val, ExtTreeVec2d min, ExtTreeVec2d max) {
         val.y = min.y;
 }
 
-void lockSquare(ExtTreeSquare& square, ExtTreeVec2d min, ExtTreeVec2d max) {
+inline void lockSquare2d(ExtTreeSquare& square, ExtTreeVec2d min, ExtTreeVec2d max) {
     lock2d(square.topRight, min, max);
     lock2d(square.topLeft, min, max);
     lock2d(square.bottemRight, min, max);
@@ -169,8 +169,8 @@ public:
 
             // Now find what corners reach what children
 
-            // Allign the square with the child
-            lockSquare(square, {x, y}, {bottemX, bottemY});
+            // Align the square with the child
+            lockSquare2d(square, {x, y}, {bottemX, bottemY});
 
             // Test all the corners to see what children they hit
             findSector(square.topRight.x, square.topRight.y)->getArea(capture, square, collisionMaxtix);

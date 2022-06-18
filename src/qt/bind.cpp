@@ -2,9 +2,7 @@
 #include "tree.cpp"
 #include <cstddef>
 #include <cstdint>
-#include <iostream>
 #include <napi.h>
-#include <string.h>
 
 #define getCtxFromParamter() ExtTree* ctx = (ExtTree*) info[0].As<Napi::Number>().Int64Value();
 
